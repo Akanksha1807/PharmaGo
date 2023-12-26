@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { useNavigate, Link } from "react-router-dom";
 import axios from 'axios'
+var cost =0;
 const Bill = ()=>{
     const [bill, setBill] = useState([])
     const navigate = useNavigate()
@@ -34,7 +35,7 @@ const Bill = ()=>{
                     </div>
                 ))}
             </div>
-            <button><Link to="/genbill">Genrate bill</Link></button>
+            <button class="b"><Link to="/genbill">Genrate bill</Link></button>
         </div>
     )
 }

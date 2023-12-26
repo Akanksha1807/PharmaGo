@@ -24,12 +24,13 @@ const Sale = ()=>{
     }
     return(
         <div className="form">
-            <h1>add meds to bill</h1>
-            <input type="number" placeholder="Customer id" onChange={handleChange} name="cid"/>
-            <input type="number" placeholder="med id" onChange={handleChange} name="med_id"/>
-            <input type="number" placeholder="Quantity" onChange={handleChange} name="qty"/>
-            <button onClick={handleClick} >Add another med</button>
-            <button><Link to="/bill">show bill</Link></button>
+            <h1>add medicines to bill</h1>
+            <input type="number" placeholder="Customer id" onChange={handleChange} name="cid"/><br />
+            <input type="number" placeholder="med id" onChange={handleChange} name="med_id"/><br />
+            <input type="number" placeholder="Quantity" onChange={handleChange} name="qty"/><br />
+            <button class="b" onClick={handleClick} >Add another med</button>
+            <br />
+            <button class="b"><Link to="/bill">show bill</Link></button>
         </div>
     )
 }

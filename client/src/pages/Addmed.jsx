@@ -15,7 +15,7 @@ const Addmed = ()=>{
     const handleClick = async e=>{
         e.preventDefault()
         try{
-            await axios.post("http://localhost:3333/sample", med)
+            await axios.post("http://localhost:3333/medicine", med)
             navigate("/")
         }catch(err){
             console.log(err)
@@ -25,11 +25,11 @@ const Addmed = ()=>{
     return(
         <div className="form">
             <h1>add new book</h1>
-            <input type="text" placeholder="Med name"  onChange={handleChange} name="med_n"/>
-            <input type="number" placeholder="Med id" onChange={handleChange} name="med_id"/>
-            <input type="number" placeholder="Med cost" onChange={handleChange} name="cost"/>
-            <input type="text" placeholder="Med quantity" onChange={handleChange} name="qty" />
-            <button onClick={handleClick}>Add</button>
+            <input type="text" placeholder="Med name"  onChange={handleChange} name="med_n"/><br />
+            <input type="number" placeholder="Med id" onChange={handleChange} name="med_id"/><br />
+            <input type="number" placeholder="Med cost" onChange={handleChange} name="cost"/><br />
+            <input type="text" placeholder="Med quantity" onChange={handleChange} name="qty" /><br />
+            <button class="b" onClick={handleClick}>Add</button>
         </div>
     )
 }

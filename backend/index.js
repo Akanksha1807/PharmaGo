@@ -128,9 +128,20 @@ app.get("/final/:cid", (req, res)=>{
         return res.json(data)
     })
 })
+app.delete("/custbill/:cid", (req, res)=>{
+    const custId = req.params.cid;
+    const q = "delete * from sample where cid = (?)"
+    
+    db.query(q, [custId], (err, data)=>
+    {
+        if(err) return res.json(err)
+        return res.json(data)
+    })
+})
 app.delete("/total/:cid", (req, res)=>{
     const custId = req.params.cid;
-    const q = "call del(?)"
+    const q = "call del_f(?);"
+    
     db.query(q, [custId], (err, data)=>
     {
         if(err) return res.json(err)

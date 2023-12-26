@@ -27,7 +27,9 @@
 .App-link {
   color: #61dafb;
 }
-
+table{
+  width: 100%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,15 +40,64 @@
 }
 tr{
   height: 15px;
-  width: 15px;
+  /* width: 15px; */
   background-color: pink;
   text-align: center;
 }
 td{
-  width: 100px;
+   width: 100px; 
   padding: 10px;
+  background-color: pink;
 }
 Link{
   color: rgb(255, 255, 255);
   font-weight: 550;
+}
+input{
+  height: 30px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #a1e2a3;
+}
+
+.b{
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 10px;
+}
+.b:hover{
+  transition : 100ms;
+  background-color: #a1e2a3;
+
+}
+.btn-del{
+    
+  background-color: #fc0000; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 10px;
+}
+.btn-del:hover{
+  transition : 100ms;
+  background-color: rgb(75, 9, 9);
+
+}
+.no{
+  display: none;
+  width: 0px;
+  background-color: white;
+
 }

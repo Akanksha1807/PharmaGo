@@ -36,14 +36,14 @@ const Medicines = () =>{
                                 <td>{med.med_n}</td>
                                 <td>{med.cost}</td>
                                 <td>{med.qty}</td>
-                                <td><button onClick={()=>handleDelete(med.med_id)}>Delete</button></td>
+                                <td><button class="btn-del" onClick={()=>handleDelete(med.med_id)}>Delete</button></td>
                             </tr>
                         </table>
                     </div>
                 ))}
             </div>
-            <button><Link to="/addmed">Add new book</Link></button>
-            <button><Link to="/sale">Sale medicine</Link></button>
+            <button class="b"><Link to="/addmed">Add new medicine</Link></button>
+            <button class="b"><Link to="/sale">Sale medicine</Link></button>
         </div>
     )
 }
