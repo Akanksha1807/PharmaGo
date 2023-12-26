@@ -19,8 +19,16 @@ const Bill = ()=>{
     // console.log(med)
     return(
         <div className="bill-table">
+            <table>
+                <tr>
+                    <th>Customer I'd</th>
+                    <th>Medicine I'd</th>
+                    <th>Medicine Name</th>
+                    <th>No of items</th>
+                    <th>Cost</th>
+                </tr>
+            </table>
             <div className="bills">
-                <h4>List of meds in bill</h4>
                 {bill.map((bill)=>(
                     <div className="bill">
                         <table>

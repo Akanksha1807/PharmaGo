@@ -29,6 +29,8 @@
 }
 table{
   width: 100%;
+  border: 2px;
+  border-color: black;
 }
 @keyframes App-logo-spin {
   from {
@@ -43,11 +45,20 @@ tr{
   /* width: 15px; */
   background-color: pink;
   text-align: center;
+  border: 2px;
+  border-color: black;
 }
 td{
    width: 100px; 
   padding: 10px;
-  background-color: pink;
+  background-color: white;
+  border: 2px;
+  border-color: black;
+}
+th{
+  width: 100px; 
+ padding: 10px;
+ background-color: pink;
 }
 Link{
   color: rgb(255, 255, 255);

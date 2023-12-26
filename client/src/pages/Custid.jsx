@@ -19,8 +19,8 @@ const Custid = () =>{
    }
     return(<div>
         <h3>Enter customer id to generate the bill</h3>
-        <input type="number" onChange={handleChange} placeholder='Customer id' name='cid'/>
-        <button onClick={handleClick}><Link to={`/custbill/${cust_id.cid}`}>Genrate and show</Link></button>
+        <input type="number" onChange={handleChange} placeholder='Customer id' name='cid'/><br />
+        <button className='b' onClick={handleClick}><Link to={`/custbill/${cust_id.cid}`}>Genrate and show</Link></button>
         {/* on clicking this button it should show the content of sample table then calculate the total and then delete the rows from sample for that customer */}
     </div>
         

@@ -24,7 +24,7 @@ const Addmed = ()=>{
     console.log(med)
     return(
         <div className="form">
-            <h1>add new book</h1>
+            <h1>add new medicine</h1>
             <input type="text" placeholder="Med name"  onChange={handleChange} name="med_n"/><br />
             <input type="number" placeholder="Med id" onChange={handleChange} name="med_id"/><br />
             <input type="number" placeholder="Med cost" onChange={handleChange} name="cost"/><br />

@@ -37,6 +37,14 @@ const Custbill = () =>{
         <div>
             <br /><br />
            <div className="billmed">
+            <table>
+                <tr>
+                    <th>Medicine I'd</th>
+                    <th>Medicine Name</th>
+                    <th>Medicine Quantity</th>
+                    <th>Cost</th>
+                </tr>
+            </table>
             {meds.map((med)=>(
                 <div className="medi" >
                     <table>
@@ -54,7 +62,7 @@ const Custbill = () =>{
             ))}
            </div> 
            <br />
-               total = {t}
+               <h3>total = {t}</h3>
            <br />
            <button class="b" onClick={handleClick}><Link to={"/"}>To Home Page</Link></button>
         </div>

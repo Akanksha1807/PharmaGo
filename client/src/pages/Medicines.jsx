@@ -27,17 +27,27 @@ const Medicines = () =>{
         <div>
             <h4>Medicines in stock</h4>
             {/* <div>med in stock</div> */}
+            <table>
+            <tr>
+                                <th>Medicine I'd</th>
+                                <th>Medicine Name</th>
+                                <th>Cost per item</th>
+                                <th>Quantity Available</th>
+                                <th>Delete the medicine</th>
+            </tr>
+            </table>
             <div className="meds">
                 {meds.map((med)=>(
                     <div className="med" key = {med.med_id}>
                         <table>
-                            <tr>
+                           <tr>
                                 <td>{med.med_id}</td>
                                 <td>{med.med_n}</td>
                                 <td>{med.cost}</td>
                                 <td>{med.qty}</td>
                                 <td><button class="btn-del" onClick={()=>handleDelete(med.med_id)}>Delete</button></td>
                             </tr>
+                            
                         </table>
                     </div>
                 ))}
